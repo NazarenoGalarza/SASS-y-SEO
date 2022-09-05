@@ -1,0 +1,13 @@
+/* EXTEND*/
+
+.estiloCard {
+    color: green;
+    font-weight: bold;
+    background-color: black;
+    
+}
+
+.estiloCard2 {
+    text-transform: uppercase;
+    @extend .estiloCard
+}

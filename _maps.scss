@@ -1,0 +1,18 @@
+/* MAPS */
+
+$mapServicios:(armado: red, reparacion:blue, mantenimiento: green, asesoramiento: yellow);
+
+@each $serv , $color in $mapServicios {
+    .#{$serv} {
+        color: $color;
+    }
+}
+
+/* MAP-GET */
+
+$estilo: (color: black, borde-sup: 2px solid orange );
+
+.pieDePagina {
+    background: map-get($estilo , color );
+    border-top: map-get($estilo , borde-sup );
+}

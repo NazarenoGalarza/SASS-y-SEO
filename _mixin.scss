@@ -1,0 +1,18 @@
+
+
+@mixin titulos-principales {
+    text-align: center;
+    background: $background-titulos;
+    color: $color-titulos;
+    padding: 10px;
+    margin-top: 50px;
+    font-size: $font5;
+    border: 2px solid orange;
+}
+
+@mixin parrafos {
+    font-size: 15px;
+    line-height: 1.5;
+    color: black;
+    margin: 20px;
+}
